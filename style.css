@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url("images/home2_08.jpg"),url("images/home2_02.jpg"), linear-gradient(#D6D6D6, #EAEAEA);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 20px left 20px, right -10% top;    
+}
+
+.topo{
+    display: flex;
+    top: 50px;
+}
+
+
+
+.centro{
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagensPortifolio {
+    width: 100%;
+    padding: 1px 0px;
+   
+}
+
+.banda ,.balao{
+    display: inline-block;
+	text-align: justify;
+    color: #FFFFFF;
+	width: 25%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 0px 0px;
+	box-sizing:border-box;
+	border: 50px;
+	border-radius: 5px;
+    background-color: #B10003
+}
+
+.fim{
+    margin:2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.atendimento {
+    padding: 10px 0 ;
+    background-color: #CCCCCC
+}
+
+.formulario {
+    padding: 10px 0 ;
+    background-color: #CCCCCC;
+}
+.rodape{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #B10003 ;
+}
+
