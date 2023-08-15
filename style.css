@@ -10,9 +10,10 @@ body{
 }
 
 .container{
-    background-image: url("images/home2_08.jpg"),url("images/home2_02.jpg"), linear-gradient(#D6D6D6, #EAEAEA);
+    background-image: url("images/home2_08.jpg"),url("images/home2_02.jpg");
+    background-color: #f0f0f0;
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom 20px left 20px, right -10% top;    
+    background-position: bottom  left 20px, top  right 0% ;    
 }
 
 .topo{
@@ -29,7 +30,7 @@ body{
     justify-content: space-between;
 }
 
-.imagensPortifolio {
+.imagensPortifolio {b
     width: 100%;
     padding: 1px 0px;
    
