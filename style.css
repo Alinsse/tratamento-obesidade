@@ -1,27 +1,55 @@
 *{
     margin: 0;
     padding: 0;
+
+    
+    
 }
 
+:root{
+    --branco-principal: #FFFFFF;
+    --vermelho-principal: #9b1616;
+    --cinza-de-fundo: #aaaaaa;
+    --vermelho-letra:  #be0b0b;
+    --cinza-letra: #333333;
+    --azul-letra: #0a0c85;
+    --fonte-principal: "Roboto", sans-serif;
+   
+}
 body {
     width: 100%;
-    background-color: #a19b9b;
+    background-image: url("images/home2_04.jpg");
+    background-repeat:repeat;
+
+
+    
+}   
+.container_pai {
+    width: 100%;
+    height: 109vh;
+    background-image:
+                      url("images/home2_08.jpg"),
+                      url("images/home2_02.jpg");
+    
+    background-repeat: no-repeat, no-repeat;
+    background-position:  left bottom, right top ;
+   justify-content: space-evenly;
+   
 }
-.container {
+.container{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-   
 }
 
 .primario {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
+    justify-content: space-around;
+   
+   
     margin-top: 20px;
     flex-direction: row;
    
@@ -32,24 +60,44 @@ body {
 }
 .titulo_texto{
     display: block;
-}
-.site {
-    width: 400px;
-    display: block;
-    margin-top: 15px;
-    font-size: 20px;
+    width: 83%;
+  
 }
 
+.site {
+    width:70%;
+    padding-left: 25%;
+    margin-top: 35px;
+    color: var(--vermelho-principal);
+    font-size: 2.1rem;
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.br{
+    color: #000;
+    font-weight: lighter ;
+    font-size:1em;
+    font-family: var(--fonte-principal);
+    
+
+}
 .introducao {
-    width: 400px;
+    width:95%;
     display: block;
-    margin-top: 15px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size:19px;
+    padding-left: 7%;
+    text-align: justify;
+    font-family: var(--fonte-principal);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--cinza-letra);
 }
 .contador_visitantes{
    top: 0;
  
- right: 0;
+ right:0;
  position: fixed;
  overflow-y: scroll;
  overflow-x: hidden;  
@@ -64,33 +112,49 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-between;
-   padding-left: 60px;
-   padding-right: 60px;
-   flex-direction: row;
+   justify-content: space-evenly;
    
+   
+   flex-direction: row;
+   margin-top: 10px;
 }
 
 .balao  {
     width: 289px;
     height: 320px;
     margin-top: 15px;
-    font-size: 20px;
-    background-color: #df1010;
-   
+    
+    background-color: var(--vermelho-principal);
+   border-radius: 5px;
 }
 .titulo_balao{
+    font-family: var(--fonte-principal);
    font-size:15px;
    font-weight:500;
+   color: var(--branco-principal);
    text-align: center;
    padding-top: 15px;
 
 }
 .informacao_balao{
-    font-size:15px;
+   
+    font-family:var(--fonte-principal);
+    color: var(--branco-principal);
+    text-align:justify;
+    font-size:14px;
    font-weight: 300;
-   text-align:justify;
+   
+  font-style: normal;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
     
+}
+.saiba_mais{
+    font-size:15px;
+    font-weight: bolder;
+  text-decoration:underline;
+ 
 }
 
 .balao_img{
@@ -99,43 +163,118 @@ body {
 
 .agendamento{
     width: 400px;
+    height: 320px;
+    margin-top: 10px;
    
-    margin-top: 15px;
-    font-size: 20px;
+    
+    
 }
 
 .icone_agendamento{
-   
+   float: left;
+   padding-left: 60px;
     height: 10vh;
 }
 
-.seta_avaliacao{
-    
+.central_agendamento{
+     color: var(--azul-letra);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size:23px;
+    font-weight:bolder;
+    padding-right:100px;
+ 
 
-    height: 5vh;
+}
+
+.central_de_agendamento{
+    color:var(--cinza-letra);
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
     
+}
+
+.contemail{
+    color:var(--cinza-letra);
+    font-family: var(--fonte-principal);
+    font-size: smaller;
+    font-weight: 200px;
+   
+
+}
+
+.seta_avaliacao{
+    float: left;
+    height: 5vh;
+    padding-left: 50px;
+}
+.central_agendamento_gratuita{
+    color: var(--azul-letra);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size:25px;
+    font-weight:bolder;
+   padding-right: 50px;
+    margin-top: 5px;
+
+}
+.pagamento_caixa{
+    width:70%;
+    height: 15vh;
+    margin-left: 60px;
+    background-color: var(--azul-letra);
+    border-radius: 5px;
+   
+  
+}
+.central_agendamento_plano{
+    padding-top: 15px;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+.ate36{
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .banda{
     width: 289px;
     height: 320px;
     margin-top: 15px;
-    font-size: 20px;
-    background-color: #df1010;
+    
+    background-color: var(--vermelho-principal);
+   border-radius: 5px;
   
 }
 
 .titulo_banda{
-    font-size:15px;
+    font-family: var(--fonte-principal);
+   font-size:14px;
    font-weight:500;
+   color: var(--branco-principal);
    text-align: center;
    padding-top: 15px;
 }
 
 .informacao_banda{
-    font-size:15px;
+    font-family:var(--fonte-principal);
+    color: var(--branco-principal);
+    text-align:justify;
+    font-size:14px;
    font-weight: 300;
-   text-align:justify;
+   
+  font-style: normal;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .banda_img{
@@ -143,45 +282,86 @@ body {
 }
 
 .terciario {
-    width: 100%;
+    width:100%;
    
     display: flex;
     flex-wrap: wrap;
    
   
-   justify-content: space-between;
-   padding-left: 60px;
-   padding-right: 60px;
+   justify-content: space-around;
+  
+  
    flex-direction: row;
    
 }
 
 .informacoes_local{
-    width: 500px;
-    height: 300px;
-    
+    width: 480px;
+    height: 280px;
     margin-top: 40px;
-    font-size: 20px;
-    background-color: #df1010;
-}
-.informacoes_contato{
-    width: 500px;
-    height: 300px;
-    margin-top: 40px;
-    font-size: 20px;
-    background-color: #df1010;
+    background-color: var(--cinza-de-fundo);
+    border-radius: 5px;
 }
 
+
 .seta_local{
-   
-   
+   margin-top: 2px;
+   float: left;
     height: 5vh;
+    margin-left: 5px;
 }
 
 .mapa{
-   
-    width: 150px;
-    height:150px;
+   float: right;
+   margin-top: 20px;
+    width: 200px;
+    
+    margin-right: 25px;
 }
 
+.titulo_local{
+    color: var(--vermelho-letra);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
 
+.paragrafo_local{
+    color: var(--cinza-letra);
+    font-family: var(--fonte-principal);
+    line-height: 1.5;
+    font-size:15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.paragrafo_final{
+    color: var(--cinza-letra);
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size:20px;
+    margin-top:20px;
+    margin-left: 10px;
+}
+.informacoes_contato{
+    width: 480px;
+    height: 280px;
+    margin-top: 40px;
+    background-color: var(--cinza-de-fundo);
+    border-radius: 5px;
+}
+
+.contato{
+    color: var(--vermelho-letra);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 23px;
+   padding-top: 8px;
+    margin-left: 10px;
+}
+
+label{
+    fo
+}
