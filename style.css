@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #a19b9b;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.primario {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 20px;
+    flex-direction: row;
+   
+}
+
+.logo_inicio{
+    width: 200px;
+}
+.titulo_texto{
+    display: block;
+}
+.site {
+    width: 400px;
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.introducao {
+    width: 400px;
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.contador_visitantes{
+   top: 0;
+ 
+ right: 0;
+ position: fixed;
+ overflow-y: scroll;
+ overflow-x: hidden;  
+   
+}
+
+.visitantes{
+    width: 100%;
+}
+
+.secundario{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   padding-left: 60px;
+   padding-right: 60px;
+   flex-direction: row;
+   
+}
+
+.balao  {
+    width: 289px;
+    height: 320px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #df1010;
+   
+}
+.titulo_balao{
+   font-size:15px;
+   font-weight:500;
+   text-align: center;
+   padding-top: 15px;
+
+}
+.informacao_balao{
+    font-size:15px;
+   font-weight: 300;
+   text-align:justify;
+    
+}
+
+.balao_img{
+    padding-top: 15px;
+}
+
+.agendamento{
+    width: 400px;
+   
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.icone_agendamento{
+   
+    height: 10vh;
+}
+
+.seta_avaliacao{
+    
+
+    height: 5vh;
+    
+}
+
+.banda{
+    width: 289px;
+    height: 320px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #df1010;
+  
+}
+
+.titulo_banda{
+    font-size:15px;
+   font-weight:500;
+   text-align: center;
+   padding-top: 15px;
+}
+
+.informacao_banda{
+    font-size:15px;
+   font-weight: 300;
+   text-align:justify;
+}
+
+.banda_img{
+    padding-top: 15px;
+}
+
+.terciario {
+    width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+   
+  
+   justify-content: space-between;
+   padding-left: 60px;
+   padding-right: 60px;
+   flex-direction: row;
+   
+}
+
+.informacoes_local{
+    width: 500px;
+    height: 300px;
+    
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #df1010;
+}
+.informacoes_contato{
+    width: 500px;
+    height: 300px;
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #df1010;
+}
+
+.seta_local{
+   
+   
+    height: 5vh;
+}
+
+.mapa{
+   
+    width: 150px;
+    height:150px;
+}
+
+
