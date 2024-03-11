@@ -8,11 +8,11 @@
 
 :root{
     --branco-principal: #FFFFFF;
-    --vermelho-principal: #9b1616;
-    --cinza-de-fundo: #aaaaaa;
-    --vermelho-letra:  #be0b0b;
+    --vermelho-principal: #910e0e;
+    --cinza-de-fundo: #c9c9c9;
+    --vermelho-letra:  #a11010;
     --cinza-letra: #333333;
-    --azul-letra: #0a0c85;
+    --azul-letra: #222363;
     --fonte-principal: "Roboto", sans-serif;
    
 }
@@ -44,10 +44,10 @@ body {
 }
 
 .primario {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
    
    
     margin-top: 20px;
@@ -65,11 +65,11 @@ body {
 }
 
 .site {
-    width:70%;
+    width:auto;
     padding-left: 25%;
     margin-top: 35px;
     color: var(--vermelho-principal);
-    font-size: 2.1rem;
+    font-size: 33px;
     font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -83,7 +83,7 @@ body {
 
 }
 .introducao {
-    width:95%;
+    width:98%;
     display: block;
     margin-top: 20px;
     font-size:19px;
@@ -94,19 +94,37 @@ body {
   font-style: normal;
   color: var(--cinza-letra);
 }
+
+.mais{
+    color: var(--vermelho-letra);
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: underline;
+}
 .contador_visitantes{
-   top: 0;
- 
- right:0;
+    background-image: url(images/home2_03.png);
+    background-repeat: no-repeat;
+   width: 13%;
+   height:80px;
+  
+   right:0;
  position: fixed;
  overflow-y: scroll;
- overflow-x: hidden;  
-   
+ overflow-x: hidden; 
+ text-align: center; 
+ 
 }
 
-.visitantes{
+.visitante{
     width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: -15px;
+color: var(--branco-principal);
+font-size: 14px;  
+  
 }
+
 
 .secundario{
     width: 100%;
@@ -292,7 +310,7 @@ body {
   
   
    flex-direction: row;
-   
+   margin-bottom: 40px
 }
 
 .informacoes_local{
@@ -314,7 +332,7 @@ body {
 .mapa{
    float: right;
    margin-top: 20px;
-    width: 200px;
+    width: 35%;
     
     margin-right: 25px;
 }
@@ -329,20 +347,23 @@ body {
 }
 
 .paragrafo_local{
+    width: 50%;
+    height: 28vh;
     color: var(--cinza-letra);
     font-family: var(--fonte-principal);
-    line-height: 1.5;
+    line-height: 1.3;
     font-size:15px;
     margin-top: 5px;
     margin-left: 10px;
 }
 
 .paragrafo_final{
+    width: 83%;
     color: var(--cinza-letra);
     font-family: var(--fonte-principal);
     font-weight: bold;
-    font-size:20px;
-    margin-top:20px;
+    font-size:1.3em;
+   
     margin-left: 10px;
 }
 .informacoes_contato{
@@ -362,6 +383,89 @@ body {
     margin-left: 10px;
 }
 
-label{
-    fo
+.formulario{
+
+    width: 100%;
+    height: 50vh;
+}
+
+.ladoum{
+    display: inline-block;
+    width: 45%;
+    font-family: var(--fonte-principal);
+    color: var(--cinza-letra);
+    font-size:15px;
+    line-height: 1.8;
+    margin-left: -18px;
+    margin-top: 30px;
+    
+}
+
+.lado{
+    display: inline-block;
+    width: 50%;
+    font-family: var(--fonte-principal);
+    color: var(--cinza-letra);
+    font-size:15px;
+    line-height: 1.3;
+    margin-top: -20px;
+   
+    
+    
+}
+
+
+input{
+    width: 80%;
+    height: 4vh;
+    border-radius: 7px;
+    border-style: groove;
+    border-color: #adacac;
+    box-shadow: 5px 3px 20px 0  #9b9b9b;
+
+
+}
+textarea{
+    width: 100%;
+    height: 20%;
+    position: relative;
+  border-radius: 7px;
+  border-color: var(--cinza-letra);
+  border-style:groove;
+  box-shadow: 5px 3px 20px 0  #9b9b9b;
+  margin-bottom: 9px;
+
+}
+button{
+    width:35%;
+    float: right;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size:small;
+    color: var(--branco-principal);
+    border-radius: 7px;
+    background-color: var(--vermelho-principal);
+    
+}
+
+footer{
+    width: 100%;
+    height:40px;
+    background-color: var(--vermelho-principal);
+    text-align:  center;
+   margin-top: -100px;
+}
+
+.rodape{
+    font-family: var(--fonte-principal);
+    font-weight: lighter;
+    color: var(--branco-principal);
+    padding-top: 20px;
+   
+    
+    font-size:14px;
+   font-weight: 300;
+   
+  font-style: normal;
+ 
 }

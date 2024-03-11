@@ -15,11 +15,11 @@
 <body>
     
 <div class="container_pai">
-    <div class="contador_visitantes">
-        <img src="images/home2_03.png" alt="contador" class="visitantes">
-    </div>
+   
     <div class="container">
-
+        <div class="contador_visitantes">
+            <p class="visitante">VISITANTE<br>00.000.000</p>  
+        </div>
         <div class="primario">
             <div class="logo_inicio">
                 <img src="images/home2_05.png" alt="logo inicio" class="logo">
@@ -34,11 +34,12 @@
                     Altamente qualificada, estamos no trabalho de combate a obesidade a quase 12 anos com mais de 5.000
                     mil<br>
                     pacientes atendidos com sucesso, nossa equipe é composta por Médicos Cirurgiões, Endocrinologista,
-                    <span> Saiba
+                    <span class="mais"> Saiba
                         Mais</span>
                 </p>
+                
             </div>
-
+            
         </div>
     </div>
 
@@ -133,6 +134,9 @@
             <form id="formulario">
                 <fieldset>
                     <legend class="contato">CONTATO</legend>
+                    <div class="ladoum">
+                   
+                    
                     <label> Nome:</label>
                     <br>
                     <input id="Nome" type="text">
@@ -143,19 +147,28 @@
                     <br>
                     <label>Telefone:</label>
                     <br>
-                    <input id="telefone" type="number">
+                    <input id="telefone" type="tel">
+                </div>
+                <div class="lado">
+                    <br><br>
+                    <label class="msg">Mensagem:</label>
                     <br>
-                    <label>Mensagem:</label>
-                    <br>
-                    <textarea id="msg" cols="35" rows="8"></textarea>
-                    <br>
-                    <input id="btn_submit" type="submit" value="Enviar">
+                    <textarea id="msg" cols="30" rows="8"></textarea>
+                    <div class="botao">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+                
                 </fieldset>
             </form>
         </div>
 
     </div>
 </div>
+<footer class="rodape">
+
+   TRATAMENTOS PARA OBESIDADE © 2012 - Todos os direitos reservados
+</footer>
 </div>
 
 
@@ -163,4 +176,3 @@
 
 </html>
 
-<footer></footer>
