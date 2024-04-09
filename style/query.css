@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px) {
+    .contador_visitantes {
+       width: 40%;
+      
+      
+    }
+    .visitante{
+        font-size: 0.8em;
+    }
+    .site {
+        font-size:1.5em;
+        margin-left: -20px;
+
+}
+
+    .balao{
+        width:80%;
+      
+    }
+
+    .informacao_balao{
+        width: 80%;
+        height: auto;
+        font-size: 0.8em;
+    }
+
+    .balao_img{
+        width: 77%;
+    }
+
+    .agendamento{
+        width: 100%;
+    }
+
+    .icone_agendamento{
+        width:auto;
+        height:10% ;
+    }
+
+    .central_agendamento {
+       font-size: 0.6em;
+       margin-top: 5px;
+    }
+    
+}
